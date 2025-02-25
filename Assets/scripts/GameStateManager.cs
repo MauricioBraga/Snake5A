@@ -6,6 +6,8 @@ public class GameStateManager : MonoBehaviour
     public TelaInicialGameState telaInicialState = new TelaInicialGameState();
     public TelaCreditosGameState telaCreditosState = new TelaCreditosGameState();
 
+    public PlayingGameState playingState = new PlayingGameState();
+
      void Start()   {
         currentState = telaInicialState;
         // inicia o estado.

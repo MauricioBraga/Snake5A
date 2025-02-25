@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class TelaInicialGameState : GameBaseState
+public class PlayingGameState : GameBaseState
 {
     public override void enterState(GameStateManager gameState)
     {
-        Debug.Log("Entramos na Tela inicial.");
+        Debug.Log("Entramos no modo playing.");
     }
 
     public override void updateState(GameStateManager gameState)
@@ -12,7 +12,7 @@ public class TelaInicialGameState : GameBaseState
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // muda para o próximo estado.
-            gameState.switchState(gameState.playingState);
+            gameState.switchState(gameState.telaCreditosState);
         }
 
     }
