@@ -12,7 +12,7 @@ public class PlayingGameState : GameBaseState
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // muda para o próximo estado.
-            gameState.switchState(gameState.telaCreditosState);
+            gameState.switchState(gameState.telaGameOverState);
         }
 
     }
