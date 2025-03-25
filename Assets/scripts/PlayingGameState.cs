@@ -6,6 +6,8 @@ public class PlayingGameState : GameBaseState
     {
         Debug.Log("Entramos no modo playing.");
         gameState.AtivarElementosJogo(true);
+
+        gameState.player.GetComponent<Snake>().ResetState();
     }
 
     public override void updateState(GameStateManager gameState)
