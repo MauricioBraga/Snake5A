@@ -18,7 +18,7 @@ public class Snake : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ativo = true; // retirar depois.
+        // ativo = true; // retirar depois.
         segments.Clear();
         segments.Add(transform);
         score = 0;

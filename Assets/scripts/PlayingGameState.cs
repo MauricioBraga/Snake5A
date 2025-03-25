@@ -5,6 +5,7 @@ public class PlayingGameState : GameBaseState
     public override void enterState(GameStateManager gameState)
     {
         Debug.Log("Entramos no modo playing.");
+        gameState.AtivarElementosJogo(true);
     }
 
     public override void updateState(GameStateManager gameState)
@@ -20,5 +21,6 @@ public class PlayingGameState : GameBaseState
     public override void leaveState(GameStateManager gameState)
     {
         Debug.Log("Saindo da Tela inicial.");
+        gameState.AtivarElementosJogo(false);
     }
 }
